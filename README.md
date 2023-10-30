@@ -90,3 +90,48 @@ The correct spelling "Withdrawal" should be used in the user interface and any t
 **Actual Behavior:**
 The incorrect spelling "Withdrawl" is being displayed in the user interface.
 
+---------------------------
+
+**Bug #5: Missing Image for Coffee in Consumption Calculator - https://www.globalsqa.com/angularJs-protractor/ConsumptionCalculator/**
+
+**Priority and severity:**
+P2 - Medium
+
+**Description:**
+While using the Consumption Calculator on the website Consumption Calculator , I encountered a problem where the image related to coffee is not displayed when the user surpasses both the break-even numbers for both coffees and cigarettes. Instead, only an image related to cigars is presented, leading to confusion for the user.
+
+**Steps to Reproduce:**
+1. Navigate to Consumption Calculator .
+2. Input values for both coffee and cigarettes such that both break-even numbers are surpassed.
+3. Observe the image that is presented.
+
+**Expected Behavior:**
+When the user surpasses both the break-even numbers for coffee and cigarettes, the appropriate images for both coffee and cigarettes should be displayed. This helps in providing clear visual feedback to the user.
+
+**Actual Behavior:**
+Only the image related to cigars is displayed when the user surpasses both break-even numbers. The image related to coffee is missing, which may lead to confusion and misinterpretation.
+
+----------------
+
+**Bug #6: Incorrect Error Message for Cigarette Intake Calculation - https://www.globalsqa.com/angularJs-protractor/ConsumptionCalculator/**
+
+**Priority and severity:**
+P2 - Medium
+
+Description: 
+While using the Consumption Calculator on the website Consumption Calculator , I encountered an issue where an incorrect error message is displayed when inserting 3 cigarettes with an individual nicotine content of 30mg each. The error message incorrectly states that "You have exceeded the daily maximum intake of 30 mg," which is misleading and inaccurate.
+
+Steps to Reproduce:
+
+Navigate to Consumption Calculator .
+
+Enter the values for cigarette consumption:
+
+Number of cigarettes: 3
+
+Observe the error message displayed.
+
+Expected Behavior: When entering the values for cigarette consumption as mentioned above, the error message should accurately reflect the total nicotine content based on the input values.
+
+Actual Behavior: The error message incorrectly states that the user has exceeded the daily maximum intake of 30 mg, despite the input values not exceeding this limit.
+
