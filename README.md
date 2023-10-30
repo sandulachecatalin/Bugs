@@ -154,3 +154,114 @@ Images on the "Evenimente" page should load correctly, enhancing the user experi
 An internal image is broken and is not displayed correctly. The URL of the broken image is https://www.primariatechirghiol.ro/wp-content/themes/portal/includes/timthumb.php?src=https://www.primariatechirghiol.ro/wp-content/themes/portal/images/image-pending.gif&h=100&w=100&zc=1.
 
 ------------------------------
+
+**Bug #8: Broken Links on PrimariaTechirghiol Website - https://www.primariatechirghiol.ro/**
+
+**Priority and severity:**
+
+**P2 - Medium**
+ 
+**Description:**
+While reviewing the website Home - Primaria Techirghiol , I identified two broken links that are not functioning as intended. The specific broken links are:
+https://www.primariatechirghiol.ro/feed/
+https://www.primariatechirghiol.ro/wp-content/themes/portal/petitie_persoana_fizica.php
+
+**Steps to Reproduce:**
+1. Navigate to the website Home - Primaria Techirghiol.
+2. Attempt to access the URLs mentioned above.
+
+**Expected Behavior:**
+Links on the website should direct users to the intended pages or resources without errors.
+
+**Actual Behavior:**
+Clicking on the provided links results in errors or pages not loading as expected.
+
+---------------------
+
+**Bug #9: Missing HTTPS Redirection on Juice Shop Website - https://juice-shop.herokuapp.com/#/**
+
+**Priority and severity:**
+P2 - High
+
+**Description:**
+While using the Juice Shop website OWASP Juice Shop , I noticed that there is no automatic redirection from the HTTP version to the HTTPS version of the homepage. When accessing the website using the HTTP protocol, the user is not redirected to the secure HTTPS version of the homepage, which might pose a security risk.
+
+**Steps to Reproduce:**
+Access the website using the HTTP protocol: OWASP Juice Shop .
+
+**Expected Behavior:**
+When accessing the website using the HTTP protocol, the user should be automatically redirected to the corresponding HTTPS version of the homepage to ensure a secure connection.
+
+**Actual Behavior:**
+Accessing the website using the HTTP protocol does not trigger an automatic redirection to the HTTPS version of the homepage.
+
+--------------------
+
+**Bug #10: Duplicate Title Tags on Multiple Pages - http://testingchallenges.thetestingmap.org/index.php**
+
+**Priority and severity:**
+P4 - Low
+
+**Description:**
+While evaluating the website Testing Challenges , I identified an issue where multiple pages have duplicate title tags. The affected pages are:
+1. [Testing Challenges ](https://testingchallenges.thetestingmap.org/)
+2. [Testing Challenges ](https://testingchallenges.thetestingmap.org/challenge10.php)
+3. [Testing Challenges ](https://testingchallenges.thetestingmap.org/solve_the_testing_challenges.php)
+
+**Steps to Reproduce:**
+1. Navigate to the first URL: Testing Challenges .
+2. Observe the title tag of the webpage.
+3. Repeat the process for the second URL: Testing Challenges .
+4. Observe the title tag of the webpage.
+5. Repeat the process for the third URL: Testing Challenges .
+6. Observe the title tag of the webpage.
+
+**Expected Behavior:**
+Each page should have a unique and descriptive title tag that accurately reflects the content of the specific page.
+
+**Actual Behavior:**
+Multiple pages on the website have identical title tags, leading to confusion and reduced usability for both users and search engines.
+
+--------------------
+
+**Bug #11: Security Vulnerability - Script Injection in Comment Review for "Apple Juice" Item - https://juice-shop.herokuapp.com/#/**
+
+**Priority and severity:**
+P3 - Medium
+
+**Description:**
+While browsing the Juice Shop website OWASP Juice Shop , I identified a serious security vulnerability in the comment review section for the "Apple Juice" item. An attacker appears to have injected a malicious script within a comment review, potentially exposing users to a cross-site scripting (XSS) attack.
+
+**Steps to Reproduce:**
+1. Navigate to the Juice Shop website: OWASP Juice Shop .
+2. Locate the "Apple Juice" item.
+3. Access the comment reviews section for the "Apple Juice" item.
+4. Observe the presence of a malicious script within one of the comment reviews.
+
+**Expected Behavior:**
+Comment reviews should only display legitimate text provided by users without allowing the execution of any malicious code or scripts.
+
+**Actual Behavior:**
+A malicious script is present in one of the comment reviews for the "Apple Juice" item. This script poses a security risk to users who access the page.
+
+------------------------------
+
+**Bug #12: "Clouds" word Not Translated in Romanian in OpenWeatherMap API**
+
+**Priority and Severity:**
+P4 -Low
+
+**Description:**
+When using the OpenWeatherMap API to fetch forecast data for a specific city using the lang parameter set to Romanian ("ro"), the value of the "main" field for the weather condition "Clouds" is not being translated. Instead, the value "Clouds" is returned in English.
+
+**Steps to Reproduce:**
+1.Make a request to the OpenWeatherMap API's forecast5 endpoint with the following parameters:
+  City: London
+  lang: ro (Romanian)
+  Provide the API key
+
+**Expected Behavior:** 
+The response should include weather conditions translated to Romanian, including the translation of "Clouds" to "Norii" in the "main" field.
+
+**Actual Behavior:** 
+The response contains the value "Clouds" in the "main" field instead of the expected translation.
