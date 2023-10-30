@@ -3,42 +3,90 @@
 Below are some Bug Report samples that I wrote while working on previous projects.
 
 ------------
-**Login is not working properly**
+**Bug #1: About Us" section not updated or lacking relevant information - https://www.demoblaze.com/**
 
-**Description**
-When trying to login with the correct credentials, nothing happens. The user is not logged in and no error message is displayed.
+**Priority and severity:**
+P4 - Low
 
-**Steps to reproduce**
-1. Go to www.website.com/login
-2. Add a correct user / pass
+**Description:**
+The "About Us" section on the website appears to be outdated and does not contain relevant information. Users visiting the page are not able to get a clear understanding of the company's current mission, values, and goals due to the lack of updated content.
 
-**Expected result**
-User should be able to login and is taken to his profile page.
+**Steps to Reproduce:**
+1. Navigate to the homepage of the website.
+2. Locate the "About Us" link in the navigation menu.
+3. Click on the "About Us" link to access the respective page.
 
-**Actual result**
-User is not logged and and no error appears.
+**Expected Behavior:** 
+The "About Us" section should provide up-to-date information about the company, including its mission, values, history, team, and objectives. Users should be able to understand the company's identity and goals clearly.
 
-**Test data**
-User: catalin &  Pass: 123456
+**Actual Behavior:**
+The "About Us" section displays outdated or irrelevant content that does not accurately represent the company's current state, mission, or objectives. Users are left with incomplete or inaccurate information.
 
 -------------
 
-**Application crash on clicking the SAVE button while creating a new user**
+**Bug #2: Security Vulnerabilities Allowing Unauthorized Access - https://www.globalsqa.com/angularJs-protractor/BankingProject/#/login**
 
-**Description**
-Application crash on clicking the SAVE button while creating a new the user, hence unable to create a new user in the application.
+**Priority and severity:**
+P2 - High
 
-**Steps to reproduce**
-1. Login into the Application
-2. Navigate to the Users Menu > New User
-3. Filled all the user information fields
-4. Clicked on the ‘Save’ button
-5. Seen an error page “ORA1090 Exception: Insert values Error…”
-6. See the attached logs for more information (Attach more logs related to bug..IF any)
-7. And also see the attached screenshot of the error page.
+**Description:**
+The website https://www.globalsqa.com/angularJs-protractor/BankingProject/#/login  exhibits significant security vulnerabilities that allow unauthorized access to customer-sensitive data without proper authentication.
 
-**Expected Result**
-On clicking SAVE button, should be prompted to a success message “New User has been created successfully”.
+**Steps to Reproduce:**
+1. Navigate to the website URL https://www.globalsqa.com/angularJs-protractor/BankingProject/#/login .
+2. Access the "Home" page.
+3. Click on "Bank Manager Login."
+4. Navigate to "Customers" without requiring any login.
+5. Observe that sensitive customer data is accessible without proper authentication.
 
-**Actual Result**
-After clicking SAVE the application crashes.
+**Expected Behavior:**
+Sensitive customer data should not be accessible without proper authentication and authorization.
+
+**Actual Behavior:**
+Unauthorized users can access sensitive data without proper authentication.
+
+-------------------------------
+
+**Bug #3: Security Vulnerabilities Allowing Unauthorized Transactions - https://www.globalsqa.com/angularJs-protractor/BankingProject/#/login**
+
+**Priority and severity:**
+P1 - Critical
+
+**Description:**
+The website XYZ Bank  exhibits significant security vulnerabilities that allow unauthorized access to unauthorized transactions without proper authentication.
+
+**Steps to Reproduce:**
+1. Navigate to the website URL https://www.globalsqa.com/angularJs-protractor/BankingProject/#/login .
+2. Access the "Home" page.
+3. Click on "Customer Login."
+4. Choose a customer name.
+5. Select any option that triggers a transaction.
+6. Note that no password or authentication is required for the transaction.
+
+**Expected Behavior:**
+Transactions should require appropriate authentication (e.g., password, two-factor authentication) to prevent unauthorized access.
+
+**Actual Behavior:**
+Unauthorized users can perform transactions without providing necessary authentication credentials.
+
+----------------------------------------------
+
+**Bug #4: Typo in the Word "Withdrawl" on XYZ Bank Website - https://www.globalsqa.com/angularJs-protractor/BankingProject/#/login**
+
+**Priority and severity**
+P4 - Low
+
+**Description:**
+While using the website https://www.globalsqa.com/angularJs-protractor/BankingProject/#/login , I encountered a typographical error in the word "Withdrawl." The correct spelling should be "Withdrawal," but the incorrect spelling "Withdrawl" is being displayed.
+
+**Steps to Reproduce:**
+1. Navigate to https://www.globalsqa.com/angularJs-protractor/BankingProject/#/login .
+2. Log in to the website using valid credentials.
+3. Access a section or page where the word "Withdrawl" is present, such as a transaction or account page.
+
+**Expected Behavior:**
+The correct spelling "Withdrawal" should be used in the user interface and any textual content on the website.
+
+**Actual Behavior:**
+The incorrect spelling "Withdrawl" is being displayed in the user interface.
+
