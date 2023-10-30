@@ -118,20 +118,20 @@ Only the image related to cigars is displayed when the user surpasses both break
 **Priority and severity:**
 P2 - Medium
 
-Description: 
+**Description:** 
 While using the Consumption Calculator on the website Consumption Calculator , I encountered an issue where an incorrect error message is displayed when inserting 3 cigarettes with an individual nicotine content of 30mg each. The error message incorrectly states that "You have exceeded the daily maximum intake of 30 mg," which is misleading and inaccurate.
 
-Steps to Reproduce:
+**Steps to Reproduce:**
+1. Navigate to Consumption Calculator .
+2. Enter the values for cigarette consumption:
+3. Number of cigarettes: 3
+4. Observe the error message displayed.
 
-Navigate to Consumption Calculator .
+**Expected Behavior:** 
+When entering the values for cigarette consumption as mentioned above, the error message should accurately reflect the total nicotine content based on the input values.
 
-Enter the values for cigarette consumption:
+**Actual Behavior:** 
+The error message incorrectly states that the user has exceeded the daily maximum intake of 30 mg, despite the input values not exceeding this limit.
 
-Number of cigarettes: 3
-
-Observe the error message displayed.
-
-Expected Behavior: When entering the values for cigarette consumption as mentioned above, the error message should accurately reflect the total nicotine content based on the input values.
-
-Actual Behavior: The error message incorrectly states that the user has exceeded the daily maximum intake of 30 mg, despite the input values not exceeding this limit.
+---------------------------
 
