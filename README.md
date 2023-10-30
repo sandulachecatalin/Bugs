@@ -135,3 +135,22 @@ The error message incorrectly states that the user has exceeded the daily maximu
 
 ---------------------------
 
+**Bug #7: Broken Internal Image on Evenimente Page - https://www.primariatechirghiol.ro/**
+
+**Priority and severity:**
+P1 - Low
+
+**Description:**
+While browsing the website Home - Primaria Techirghiol , specifically on the "Evenimente" page Evenimente Archives - Primaria Techirghiol , I encountered an issue where an internal image is broken. The URL of the broken image is https://www.primariatechirghiol.ro/wp-content/themes/portal/includes/timthumb.php?src=https://www.primariatechirghiol.ro/wp-content/themes/portal/images/image-pending.gif&h=100&w=100&zc=1.
+
+**Steps to Reproduce:**
+1. Navigate to the "Evenimente" page on the website Evenimente Archives - Primaria Techirghiol .
+2. Observe the page content, specifically looking for images related to events.
+
+**Expected Behavior:**
+Images on the "Evenimente" page should load correctly, enhancing the user experience and providing visual context for the events listed.
+
+**Actual Behavior:**
+An internal image is broken and is not displayed correctly. The URL of the broken image is https://www.primariatechirghiol.ro/wp-content/themes/portal/includes/timthumb.php?src=https://www.primariatechirghiol.ro/wp-content/themes/portal/images/image-pending.gif&h=100&w=100&zc=1.
+
+------------------------------
